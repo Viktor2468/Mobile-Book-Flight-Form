@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+html {
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+}
+.padding {
+    margin: 1rem 0rem;
+}
+#mobile-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#main-container {
+    width: 450px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(246,249,255,1) 70%, rgba(251,252,255,1) 70%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    position: relative;
+    padding: 0 1.2rem;
+}
+
+.back-button {
+    border: none;
+    font-size: 2rem;
+    background: none;
+}
+
+#ticket-type {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#ticket-type > input[type="radio"]{
+    appearance: none;
+}
+
+
+#ticket-type > label {
+    padding: 6px 10px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    color: #cad1df;
+    font-size: 12px;
+    border: 1.5px solid #cad1de;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 33%;
+    cursor: pointer;
+    
+}
+
+#ticket-type > label > .fa-solid {
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    font-size: 16px;
+    background-color: #cad1de;
+}
+
+#ticket-type > input[type="radio"]:checked + label {
+	background-color: #000000;
+	color: #ffffff;
+	box-shadow: 0 15px 45px rgb(24,249,141,0.2);
+}
+
+#ticket-type > input[type="radio"]:checked + label > i{
+    color: black;
+    background-color: white;
+}
+
+.from-location {
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.to-location {
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    gap: 1rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #cad1de;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px
+}
+
+.right > label {
+    font-size: 14px;
+    color: #cad1de;
+}
+
+#from-select {
+    border: none;
+    width: 100%;
+    appearance: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.dotted-line {
+    height: 15px;
+    border-left: 1px dashed #cad1de;
+}
+
+#select-location {
+    position: relative;
+}
+
+.switch-button {
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #000000;
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    cursor: pointer;
+}
+
+.switch-button > i {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+#select-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.date {
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 41%;
+}
+
+.right > input {
+    border: none;
+    padding-top: 5px;
+    width: 100%;
+}
+
+.right > input::placeholder {
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+.flight-class {
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 41%;
+}
+
+.travelers {
+    margin-top: -1rem;
+    display: flex;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    gap: 1rem;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.your-trip {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-text > p {
+    color: #a0abbe;
+}
+
+.right-text {
+    font-size: 1.6rem;
+    color: #616f8d;
+    cursor: pointer;
+}
+
+
+
+.flight-date {
+    color: #62708e !important;
+}
+
+.left-text > h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px 
+}
+
+.one-way {
+    font-size: 14px;
+    background-color: #cad1de;
+    padding: 3px 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.flight-card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.article-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    color: #7ed321;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.seperator {
+    border-bottom: 1px dashed #9ea6b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 100px;
+    margin-top: -20px;
+}
+
+.timer-container {
+    display: flex;
+    gap: 10px;
+}
+
+.flight-time {
+    display: flex;
+}
+
+.flight-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time-top {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.time-bot {
+    color: #a4acbd;
+}
+
+.duration {
+    color: #a5aebf;
+}
+
+

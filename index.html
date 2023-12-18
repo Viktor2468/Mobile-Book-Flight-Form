@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.5.1-web/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-container">
+        <section id="mobile-header" class="padding">
+            <div class="time">
+                <p>9:41</p>
+            </div>
+            <div class="status-icons">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+        </section>
+        <section class="padding">
+            <button class="back-button" type="reset"><i class="fa-solid fa-arrow-left"></i></button>
+        </section>
+        <h1 class="padding">
+            Search Flights
+        </h1>
+        <section id="ticket-type" class="padding">
+            <input type="radio" name="payment" id="one-way" checked="checked">
+            <label for="one-way">
+                <i class="fa-solid fa-arrow-right"></i>
+                <span>One Way</span>
+            </label>
+            <input type="radio" name="payment" id="round-trip">
+            <label for="round-trip">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <span>Round Trip</span>
+            </label>       
+            <input type="radio" name="payment" id="multy-city">
+            <label for="multy-city">
+                <i class="fa-solid fa-arrow-rotate-right"></i>
+                <span>Multy City</span>
+            </label>       
+        </section>
+
+        <section id="select-location" class="padding">
+            <button type="reset" class="switch-button"><i class="fa-solid fa-arrow-right-arrow-left fa-rotate-90"></i></button>
+            <div class="from-location">
+                <div class="left">
+                    <i class="fa-solid fa-plane-up fa-rotate-180"></i>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="right">
+                    <label for="from-select">
+                        From
+                    </label>
+                    <select name="" id="from-select">
+                        <option value="">Amstardam, Netherlands</option>
+                        <option value="dog">New Delhi, India</option>
+                      </select>
+                </div>
+              
+            </div>
+            <div class="to-location">
+                <div class="left">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="right">
+                    <label for="from-select">
+                        To
+                    </label>
+                    <select name="" id="from-select">
+                        <option value="dog">New Delhi, India</option>
+                        <option value="">Amstardam, Netherlands</option>
+                      </select>
+                </div>
+            </div>
+        </section>
+
+            <section id="select-date" class="padding">
+                <div class="date">
+                    <div class="left">
+                        <i class="fa-regular fa-calendar-days"></i>
+                    </div>
+                    <div class="right">
+                        <label for="date">
+                            Departure
+                        </label>
+                        <input type="text" placeholder="12 Feb, 2023" id="date">
+                          
+                    </div>
+                  
+                </div>
+                <div class="flight-class">
+                    <div class="left">
+                        <i class="fa-solid fa-chair"></i>
+
+                    </div>
+                    <div class="right">
+                        <label for="from-select">
+                            Class
+                        </label>
+                        <select name="class" id="from-select">
+                            <option value="dog">Business</option>
+                            <option value="">First Class</option>
+                          </select>
+                    </div>
+                </div>
+           
+        </section>
+        <div class="travelers">
+            <div class="left">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="dotted-line"></div>
+            </div>
+            <div class="right">
+                <label for="from-select">
+                    Travellers
+                </label>
+                <select name="" id="from-select">
+                    <option value="dog">2 Adults</option>
+                    <option value="">3 Adults</option>
+                  </select>
+            </div>
+        </div>
+        <button class="search-btn padding" type="submit"> Search Flights</button>
+        <section class="select-flight padding">
+            <div class="your-trip">
+                <div class="left-text">
+                    <p>Your Trip</p>
+                    <h1>AMS-DEL <span class="one-way">One Way</span></h1>
+                    <p class="flight-date">12 Feb, 20203</p>
+                </div>
+                <div class="right-text">
+                    <i class="fa-solid fa-sliders fa-rotate-270"></i>
+                </div>
+            </div>
+            <article class="flight-card padding">
+                <div class="article-top">
+                    <img src="icons/spicejet-logo-alt.png" height="20px" alt="">
+                    <p class="price">$283</p>
+                </div>
+                <div class="article-center">
+                    <div class="flight-time">
+                        <div class="timer-container">
+                            <div class="timer">
+                                <p class="time-top">8:00 pm</p>
+                                <p class="time-bot">AMS, Mon</p>
+                            </div>
+                            <div class="seperator">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <div class="timer">
+                                <p class="time-top">2:15 pm</p>
+                                <p class="time-bot">DEL, Tue</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timer">
+                            <p style="color: #a4acbd;">Flight No.</p>
+                            <pstyle="color: black;">BKN7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-bottom">
+                    <p class="duration">Duration: <span style="color: black;">17h 15m</span> | Non - Stop</p>
+                </div>
+            </article>
+            <article class="flight-card padding">
+                <div class="article-top">
+                    <img src="icons/Qatar-Airways-Logo-500x313.png" height="20px" alt="">
+                    <p class="price">$447</p>
+                </div>
+                <div class="article-center">
+                    <div class="flight-time">
+                        <div class="timer-container">
+                            <div class="timer">
+                                <p class="time-top">8:00 pm</p>
+                                <p class="time-bot">AMS, Mon</p>
+                            </div>
+                            <div class="seperator">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <div class="timer">
+                                <p class="time-top">2:15 pm</p>
+                                <p class="time-bot">DEL, Tue</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timer">
+                            <p style="color: #a4acbd;">Flight No.</p>
+                            <pstyle="color: black;">BKN7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-bottom">
+                    <p class="duration">Duration: <span style="color: black;">17h 15m</span> | Non - Stop</p>
+                </div>
+            </article>
+
+            <article class="flight-card padding">
+                <div class="article-top">
+                    <img src="icons/indigo-logo-alt.png" height="20px" alt="">
+                    <p class="price" style="color: #ff4f70;">$591</p>
+                </div>
+                <div class="article-center">
+                    <div class="flight-time">
+                        <div class="timer-container">
+                            <div class="timer">
+                                <p class="time-top">8:00 pm</p>
+                                <p class="time-bot">AMS, Mon</p>
+                            </div>
+                            <div class="seperator">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <div class="timer">
+                                <p class="time-top">2:15 pm</p>
+                                <p class="time-bot">DEL, Tue</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timer">
+                            <p style="color: #a4acbd;">Flight No.</p>
+                            <pstyle="color: black;">BKN7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-bottom">
+                    <p class="duration">Duration: <span style="color: black;">17h 15m</span> | Non - Stop</p>
+                </div>
+            </article>
+
+            <article class="flight-card padding">
+                <div class="article-top">
+                    <img src="icons/vistara-logo-alt.png" height="20px" alt="">
+                    <p class="price">$283</p>
+                </div>
+                <div class="article-center">
+                    <div class="flight-time">
+                        <div class="timer-container">
+                            <div class="timer">
+                                <p class="time-top">8:00 pm</p>
+                                <p class="time-bot">AMS, Mon</p>
+                            </div>
+                            <div class="seperator">
+                                <i class="fa-solid fa-plane"></i>
+                            </div>
+                            <div class="timer">
+                                <p class="time-top">2:15 pm</p>
+                                <p class="time-bot">DEL, Tue</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timer">
+                            <p style="color: #a4acbd;">Flight No.</p>
+                            <pstyle="color: black;">BKN7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-bottom">
+                    <p class="duration">Duration: <span style="color: black;">17h 15m</span> | Non - Stop</p>
+                </div>
+            </article>
+        </section>
+        
+    </div>
+   
+</body>
+</html>
