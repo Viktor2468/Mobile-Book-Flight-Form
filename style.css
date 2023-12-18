@@ -315,4 +315,10 @@ body{
     color: #a5aebf;
 }
 
+@media (max-width: 768px) {
+    #main-container {
+        width: 95%;
+    }
+}
+
 
